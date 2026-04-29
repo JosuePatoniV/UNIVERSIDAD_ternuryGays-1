@@ -3,115 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nueva feria tecnológica en campus universitario | Portal de Noticias</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Nota | Feria Tecnológica Universitaria</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="index.html"><i class="fas fa-graduation-cap"></i> UNI-NOTICIAS</a>
-                </div>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a href="nota.html">Nota</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <div class="menu-toggle" id="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
+        <nav class="navbar">
+            <div class="logo"><i class="fas fa-university"></i> Uni<span>Noticias</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="nota.html" class="active">Nota</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container section">
-        <article class="nota-completa">
-            <header class="nota-header">
-                <h1>Nueva feria tecnológica en campus universitario atrae a miles de estudiantes</h1>
-                <div class="nota-meta">
-                    <span><i class="fas fa-user"></i> Por Juan Pérez</span> | 
-                    <span><i class="fas fa-calendar-alt"></i> 28 de Abril, 2026</span>
+    <main class="container">
+        <article class="full-note">
+            <header class="note-header">
+                <h1>Nueva feria tecnológica revoluciona el campus principal</h1>
+                <p class="meta">Por: <strong>Andrés Rivera</strong> | 24 de Mayo, 2024</p>
+                <div class="share-btns">
+                    <button class="share fb"><i class="fab fa-facebook"></i> Compartir</button>
+                    <button class="share tw"><i class="fab fa-twitter"></i> Twittear</button>
                 </div>
-                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Feria Tecnológica" class="nota-main-img">
             </header>
 
-            <div class="nota-body">
-                <p>La explanada principal de nuestra casa de estudios se transformó esta mañana en un hervidero de innovación y creatividad con la inauguración de la <strong>X Feria de Ciencia y Tecnología Universitaria</strong>. El evento, que reúne a más de 200 proyectos estudiantiles, busca fomentar el espíritu emprendedor y la aplicación práctica de los conocimientos adquiridos en las aulas.</p>
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Feria Tec" class="main-img">
+
+            <div class="content">
+                <p>El campus central se convirtió esta semana en el epicentro de la innovación con la décima edición de la "Feria de Tecnología y Ciencia 2024". Más de 50 proyectos estudiantiles fueron presentados, abarcando áreas desde la robótica avanzada hasta la biotecnología sustentable.</p>
+                <p>El rector destacó que este tipo de eventos fortalecen el vínculo entre la academia y la industria privada, permitiendo que los talentos jóvenes encuentren plazas laborales antes de egresar.</p>
                 
-                <p>Durante la ceremonia de apertura, el rector destacó la importancia de estos espacios: "La tecnología no es solo una herramienta, es el motor que nos permite resolver los problemas más apremiantes de nuestra sociedad. Ver a nuestros alumnos comprometidos con soluciones reales nos llena de orgullo".</p>
-
-                <p>Entre los proyectos más destacados se encuentra un prototipo de purificación de agua de bajo costo desarrollado por alumnos de Ingeniería Química, así como una aplicación móvil diseñada por estudiantes de Psicología para el manejo del estrés académico, la cual ya cuenta con más de mil descargas en su fase beta.</p>
-
                 <h3>Galería del Evento</h3>
                 <div class="gallery">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80" alt="Proyecto 1">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="Proyecto 2">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=400&q=80" alt="Proyecto 3">
-                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=400&q=80" alt="Proyecto 4">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="G1">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400&q=80" alt="G2">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="G3">
                 </div>
 
-                <p>Además de la exposición de proyectos, la feria cuenta con una serie de conferencias magistrales impartidas por expertos de empresas como Google, Microsoft y diversas startups locales. El acceso es gratuito para toda la comunidad universitaria y el público en general durante los tres días que durará el encuentro.</p>
-
-                <h3>Video de la Inauguración</h3>
-                <div class="video-container">
-                    <iframe height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Inauguración Feria" allowfullscreen></iframe>
-                </div>
-
-                <div class="share-buttons">
-                    <p>Compartir esta nota:</p>
-                    <a href="#" class="btn" style="background-color: #3b5998;"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a href="#" class="btn" style="background-color: #1da1f2;"><i class="fab fa-x-twitter"></i> Twitter</a>
-                    <a href="#" class="btn" style="background-color: #25d366;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <div class="note-video">
+                    <h3>Resumen en Video</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/9No-FiE9y7M" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </article>
     </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>UNI-NOTICIAS</h4>
-                    <p>El portal oficial de comunicación de nuestra casa de estudios. Comprometidos con la verdad y la excelencia académica.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Mapa del Sitio</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                        <li><a href="nota.html">Nota</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Universidad 3000, Ciudad Universitaria</li>
-                        <li><i class="fas fa-phone"></i> +52 (55) 1234-5678</li>
-                        <li><i class="fas fa-envelope"></i> contacto@universidad.edu.mx</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Portal de Noticias Universitario. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
