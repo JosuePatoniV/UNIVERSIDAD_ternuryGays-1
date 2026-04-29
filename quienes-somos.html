@@ -3,75 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiénes Somos</title>
+    <title>Quiénes Somos | Portal de Noticias Universitario</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Sobreescribe el tamaño del banner de Quiénes Somos */
-        .about-banner {
-            padding: 55px 0 !important;
-            min-height: auto;
-        }
-
-        .about-banner h1 {
-            font-size: clamp(2rem, 4vw, 2.8rem);
-            margin-bottom: 8px;
-        }
-
-        .about-banner p {
-            font-size: 1rem;
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        /* Efecto hover para las cajas de Misión y Visión */
-        .vision-mission .box {
-            transition: transform 0.3s ease, 
-                        box-shadow 0.3s ease, 
-                        background-color 0.3s ease;
-            transform-origin: center;
-        }
-
-        .vision-mission .box:hover {
-            transform: translateY(-6px) scale(1.04);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
-            background-color: #ffffff;
-        }
-
-        /* Ajuste para móviles */
-        @media (max-width: 768px) {
-            .about-banner {
-                padding: 45px 0 !important;
-            }
-
-            .vision-mission .box:hover {
-                transform: translateY(-4px) scale(1.02);
-            }
-        }
-    </style>
 </head>
 <body>
 
     <header>
         <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="index.html"><i class="fas fa-graduation-cap"></i> UNI-NOTICIAS</a>
-                </div>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i> UNI<span>NOTICIAS</span>
+                </a>
                 <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="quienes-somos.html" class="active">Quiénes Somos</a></li>
                     <li><a href="nota.html">Nota</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
-                <div class="menu-toggle" id="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
             </nav>
         </div>
     </header>
@@ -80,77 +34,52 @@
         <section class="about-banner">
             <div class="container">
                 <h1>Quiénes Somos</h1>
-                <p>Conoce más sobre la historia y los valores de nuestra institución.</p>
+                <p>Nuestra historia, misión y el compromiso con la excelencia educativa que nos define.</p>
             </div>
         </section>
 
-        <section class="section container">
-            <div class="about-grid">
+        <section class="container" style="margin-bottom: 80px;">
+            <div class="grid-2" style="align-items: center;">
                 <div class="about-text">
-                    <h2 class="section-title" style="text-align: left; margin-left: 0;">Nuestra Institución</h2>
-                    <p>El Portal de Noticias Universitario nació en el año 2026 como un proyecto escolar que el profesor nos encargó. Con el tiempo, se ha convertido en un proyecto escolar que esperamos que, como equipo, nos de algún beneficio en el segundo parcial.</p>
-                    <p>Contamos con un equipo multidisciplinario de informáticos, migajeros y procrastinadores en potencia. Todos ellos alumnos de esta curiosa casa de estudios, comprometidos con pasar la materia.</p>
+                    <h2 class="section-title" style="text-align: left; margin-top: 0;">Nuestra Institución</h2>
+                    <p style="margin-bottom: 20px;">El Portal de Noticias Universitario nació como una iniciativa para centralizar la información relevante de todas nuestras facultades y departamentos. Con el tiempo, se ha convertido en el medio de comunicación digital referente de nuestra comunidad.</p>
+                    <p style="margin-bottom: 30px;">Contamos con un equipo apasionado de periodistas, diseñadores y tecnólogos, todos ellos comprometidos con la difusión de la ciencia, la cultura y el deporte.</p>
                     
-                    <div class="vision-mission">
-                        <div class="box">
-                            <h3>Misión</h3>
-                            <p>Hacer una página web que se vea bonita en media hora.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div style="background: var(--white); padding: 25px; border-radius: var(--border-radius); box-shadow: var(--shadow); border-left: 5px solid var(--secondary-color);">
+                            <h3 style="margin-bottom: 10px; color: var(--primary-color);">Misión</h3>
+                            <p style="font-size: 0.9rem;">Informar de manera veraz, oportuna y objetiva, promoviendo la integración de toda la comunidad académica.</p>
                         </div>
-                        <div class="box">
-                            <h3>Visión</h3>
-                            <p>Obtener algunas décimas más en el segundo parcial.</p>
+                        <div style="background: var(--white); padding: 25px; border-radius: var(--border-radius); box-shadow: var(--shadow); border-left: 5px solid var(--primary-color);">
+                            <h3 style="margin-bottom: 10px; color: var(--primary-color);">Visión</h3>
+                            <p style="font-size: 0.9rem;">Ser el portal líder de noticias universitarias a nivel nacional, destacando por nuestra innovación digital.</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://cdn.memegenerator.es/descargar/32382382" alt="Petición 100% Universitaria" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="about-image" style="text-align: right;">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80" alt="Institución Universitaria" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--shadow);">
                 </div>
-            </div>
-            
-            <div class="section" style="margin-top: 40px;">
-                <h2 class="section-title">Nuestros Objetivos</h2>
-                <ul style="max-width: 800px; margin: 0 auto; list-style: disc; padding-left: 20px;">
-                    <li style="margin-bottom: 15px;">Fomentar el sentido de pertenencia en la comunidad universitaria.</li>
-                    <li style="margin-bottom: 15px;">Dar visibilidad a los proyectos de investigación y emprendimiento de los alumnos.</li>
-                    <li style="margin-bottom: 15px;">Servir como canal oficial de comunicación para avisos institucionales.</li>
-                    <li style="margin-bottom: 15px;">Promover eventos culturales, académicos y deportivos que enriquezcan la vida estudiantil.</li>
-                </ul>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>UNI-NOTICIAS</h4>
+            <div class="grid-2" style="text-align: left; margin-bottom: 40px;">
+                <div>
+                    <h3 style="margin-bottom: 20px;">UNI-NOTICIAS</h3>
                     <p>El portal oficial de comunicación de nuestra casa de estudios. Comprometidos con la verdad y la excelencia académica.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div style="text-align: right;">
+                    <h3 style="margin-bottom: 20px;">Síguenos</h3>
+                    <div style="font-size: 1.5rem; display: flex; gap: 20px; justify-content: flex-end;">
+                        <a href="#" style="color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-x-twitter"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Mapa del Sitio</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                        <li><a href="nota.html">Nota</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Universidad 3000, Ciudad Universitaria</li>
-                        <li><i class="fas fa-phone"></i> +52 (55) 1234-5678</li>
-                        <li><i class="fas fa-envelope"></i> contacto@universidad.edu.mx</li>
-                    </ul>
-                </div>
             </div>
-            <div class="footer-bottom">
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center;">
                 <p>&copy; 2026 Portal de Noticias Universitario. Todos los derechos reservados.</p>
             </div>
         </div>

@@ -7,8 +7,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,40 +16,37 @@
 
     <header>
         <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="index.html"><i class="fas fa-graduation-cap"></i> UNI-NOTICIAS</a>
-                </div>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i> UNI<span>NOTICIAS</span>
+                </a>
                 <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="quienes-somos.html">Quiénes Somos</a></li>
                     <li><a href="nota.html">Nota</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
                 </ul>
-                <div class="menu-toggle" id="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="about-banner" style="background-color: #004a99; padding: 60px 0;">
+        <section class="about-banner" style="background: linear-gradient(135deg, #004a99 0%, #003366 100%);">
             <div class="container">
                 <div class="grid-2" style="align-items: center; text-align: left;">
                     <div class="banner-text">
-                        <h1 style="font-size: 3rem; margin-bottom: 20px;">Contacto</h1>
-                        <p style="font-size: 1.2rem; margin-bottom: 0;">¿Tienes alguna duda o noticia que compartir? ¡Escríbenos!</p>
+                        <h1>Contacto</h1>
+                        <p>¿Tienes alguna duda o noticia que compartir? ¡Escríbenos y sé parte de la comunidad!</p>
                     </div>
                     <div class="banner-image">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Contacto Universitario" style="border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Contacto Universitario" style="width: 100%; border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section container">
-            <div class="contact-container">
+        <section class="container">
+            <div class="contact-card">
                 <div id="success-msg" class="success-msg"></div>
                 
                 <form id="contact-form" novalidate>
@@ -59,40 +56,41 @@
                         <div id="error-nombre" class="error-msg"></div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 5512345678" required>
-                        <div id="error-telefono" class="error-msg"></div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" placeholder="Ej. juan@correo.com" required>
-                        <div id="error-email" class="error-msg"></div>
+                    <div class="grid-2" style="gap: 20px;">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ej. 5512345678" required>
+                            <div id="error-telefono" class="error-msg"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Ej. juan@correo.com" required>
+                            <div id="error-email" class="error-msg"></div>
+                        </div>
                     </div>
 
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
                         <div id="error-mensaje" class="error-msg"></div>
                     </div>
 
-                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensaje</button>
+                    <button type="submit" class="btn" style="width: 100%; font-size: 1.1rem; padding: 16px;">Enviar Mensaje</button>
                 </form>
             </div>
 
-            <div class="section" style="text-align: center; margin-top: 40px;">
+            <div style="text-align: center; margin-bottom: 80px;">
                 <h2 class="section-title">Otras formas de contacto</h2>
-                <div class="grid-2" style="margin-top: 30px;">
-                    <div class="box">
-                        <i class="fas fa-envelope" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px;"></i>
-                        <h3>Email</h3>
-                        <p>informes@universidad.edu.mx</p>
+                <div class="grid-2" style="margin-top: 40px;">
+                    <div style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <i class="fas fa-envelope" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 20px;"></i>
+                        <h3 style="margin-bottom: 10px;">Email Directo</h3>
+                        <p style="color: var(--light-text); font-weight: 500;">informes@universidad.edu.mx</p>
                     </div>
-                    <div class="box">
-                        <i class="fas fa-phone-alt" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px;"></i>
-                        <h3>Teléfono</h3>
-                        <p>+52 (55) 5678-1234 Ext. 101</p>
+                    <div style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <i class="fas fa-phone-alt" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 20px;"></i>
+                        <h3 style="margin-bottom: 10px;">Línea Telefónica</h3>
+                        <p style="color: var(--light-text); font-weight: 500;">+52 (55) 5678-1234 Ext. 101</p>
                     </div>
                 </div>
             </div>
@@ -101,36 +99,21 @@
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>UNI-NOTICIAS</h4>
+            <div class="grid-2" style="text-align: left; margin-bottom: 40px;">
+                <div>
+                    <h3 style="margin-bottom: 20px;">UNI-NOTICIAS</h3>
                     <p>El portal oficial de comunicación de nuestra casa de estudios. Comprometidos con la verdad y la excelencia académica.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div style="text-align: right;">
+                    <h3 style="margin-bottom: 20px;">Síguenos</h3>
+                    <div style="font-size: 1.5rem; display: flex; gap: 20px; justify-content: flex-end;">
+                        <a href="#" style="color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-x-twitter"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Mapa del Sitio</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                        <li><a href="nota.html">Nota</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Universidad 3000, Ciudad Universitaria</li>
-                        <li><i class="fas fa-phone"></i> +52 (55) 1234-5678</li>
-                        <li><i class="fas fa-envelope"></i> contacto@universidad.edu.mx</li>
-                    </ul>
-                </div>
             </div>
-            <div class="footer-bottom">
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center;">
                 <p>&copy; 2026 Portal de Noticias Universitario. Todos los derechos reservados.</p>
             </div>
         </div>

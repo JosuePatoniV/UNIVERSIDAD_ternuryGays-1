@@ -3,68 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nueva feria tecnológica revoluciona el campus | UniNoticias</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nota | Feria Tecnológica Universitaria</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="article-page">
+<body>
+
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo"><i class="fas fa-university"></i> Uni<span>Noticias</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                <li><a href="nota.html" class="active">Nota</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i> UNI<span>NOTICIAS</span>
+                </a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="nota.html" class="active">Nota</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="container-article">
-        <article class="single-post">
-            <header class="post-header">
-                <span class="category-tag">Innovación Académica</span>
-                <h1 class="post-title">Nueva feria tecnológica revoluciona el campus principal</h1>
-                <div class="post-meta-wrapper">
-                    <div class="author-info">
-                        <img src="https://ui-avatars.com/api/?name=Andres+Rivera&background=1a2a6c&color=fff" alt="Andrés Rivera" class="author-img">
-                        <div>
-                            <p class="author-name">Por Claudia Sheinbaum</p>
-                            <p class="post-date">11 de Septiembre, 2001 • <i class="far fa-clock"></i> 666 min de lectura</p>
-                        </div>
-                    </div>
-                    <div class="post-share">
-                        <a href="#" class="share-icon fb"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="share-icon tw"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
+    <main>
+        <article class="container" style="max-width: 900px; margin: 60px auto;">
+            <header style="margin-bottom: 40px; text-align: center;">
+                <h1 style="font-size: 3rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">Nueva feria tecnológica revoluciona el campus principal</h1>
+                <p style="color: var(--light-text); font-weight: 500;">Por <span style="color: var(--primary-color);">Andrés Rivera</span> | Publicado el 24 de Mayo, 2024</p>
             </header>
 
-            <figure class="main-featured-image">
-                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Feria">
-                <figcaption>Demostración de prototipos de robótica en la explanada central.</figcaption>
-            </figure>
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Feria Tecnológica" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--shadow); margin-bottom: 40px;">
 
-            <div class="post-body">
-                <p class="lead">El campus central se convirtió esta semana en el epicentro de la innovación con la décima edición de la "Feria de Tecnología y Ciencia 2026".</p>
-                <p>Más de 50 proyectos estudiantiles fueron presentados, abarcando áreas desde la robótica avanzada hasta la biotecnología sustentable. La jornada atrajo a expertos de todo el país.</p>
+            <div class="content" style="font-size: 1.15rem; line-height: 1.8;">
+                <p style="margin-bottom: 25px;">El campus central se convirtió esta semana en el epicentro de la innovación con la décima edición de la "Feria de Tecnología y Ciencia 2024". Más de 50 proyectos estudiantiles fueron presentados, abarcando áreas desde la robótica avanzada hasta la biotecnología sustentable.</p>
+                <p style="margin-bottom: 25px;">El rector destacó que este tipo de eventos fortalecen el vínculo entre la academia y la industria privada, permitiendo que los talentos jóvenes encuentren plazas laborales antes de egresar.</p>
                 
-                <blockquote>"La universidad es el laboratorio donde se cocina el futuro del país." <cite>— Rectora Importante</cite></blockquote>
-
-                <h3>Impacto Global</h3>
-                <p>El rector destacó que este tipo de eventos fortalecen el vínculo entre la academia y la industria privada, permitiendo empleabilidad inmediata.</p>
-
-                <div class="article-gallery">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="G1">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400&q=80" alt="G2">
+                <h3 style="font-size: 1.8rem; margin: 40px 0 20px;">Galería del Evento</h3>
+                <div class="grid-2" style="margin-bottom: 40px;">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Robótica" style="width: 100%; border-radius: 8px;">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" alt="Software" style="width: 100%; border-radius: 8px;">
                 </div>
 
-                <div class="video-wrapper">
-                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/9No-FiE9y7M" frameborder="0" allowfullscreen></iframe>
+                <div style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow); margin-bottom: 40px;">
+                    <h3 style="margin-bottom: 20px;">Resumen en Video</h3>
+                    <div style="border-radius: 8px; overflow: hidden;">
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/9No-FiE9y7M" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="index.html" class="btn">Volver al inicio</a>
             </div>
         </article>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid-2" style="text-align: left; margin-bottom: 40px;">
+                <div>
+                    <h3 style="margin-bottom: 20px;">UNI-NOTICIAS</h3>
+                    <p>El portal oficial de comunicación de nuestra casa de estudios. Comprometidos con la verdad y la excelencia académica.</p>
+                </div>
+                <div style="text-align: right;">
+                    <h3 style="margin-bottom: 20px;">Síguenos</h3>
+                    <div style="font-size: 1.5rem; display: flex; gap: 20px; justify-content: flex-end;">
+                        <a href="#" style="color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center;">
+                <p>&copy; 2026 Portal de Noticias Universitario. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

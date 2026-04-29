@@ -7,8 +7,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,17 +16,17 @@
 
     <header>
         <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="index.html"><i class="fas fa-graduation-cap"></i> UNI-NOTICIAS</a>
-                </div>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i> UNI<span>NOTICIAS</span>
+                </a>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html" class="active">Inicio</a></li>
                     <li><a href="quienes-somos.html">Quiénes Somos</a></li>
                     <li><a href="nota.html">Nota</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
-                <div class="menu-toggle" id="mobile-menu">
+                <div class="menu-toggle" id="mobile-menu" style="display: none;">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -34,99 +34,71 @@
     </header>
 
     <main>
-        <!-- Hero Section / Carousel -->
-        <section class="hero">
-            <div class="carousel" id="carousel">
-                <!-- Slide 1 -->
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80" alt="Campus Universitario">
-                    <div class="slide-content">
-                        <div class="container">
-                            <h2>Bienvenidos al Portal Universitario</h2>
-                            <p>Infórmate sobre los eventos más importantes de nuestra comunidad académica y estudiantil.</p>
-                            <a href="quienes-somos.html" class="btn">Conocer más</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80" alt="Investigación">
-                    <div class="slide-content">
-                        <div class="container">
-                            <h2>Innovación y Tecnología</h2>
-                            <p>Descubre los últimos avances en investigación realizados por nuestros docentes y alumnos.</p>
-                            <a href="nota.html" class="btn">Ver noticia</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&w=1200&q=80" alt="Vida Estudiantil">
-                    <div class="slide-content">
-                        <div class="container">
-                            <h2>Vida en el Campus</h2>
-                            <p>Participa en las actividades culturales y deportivas que tenemos preparadas para ti.</p>
-                            <a href="nota.html" class="btn">Leer más</a>
-                        </div>
-                    </div>
+        <!-- Hero Section -->
+        <section class="about-banner" style="text-align: center; padding: 100px 0;">
+            <div class="container">
+                <h1>Tu Ventana al Mundo Universitario</h1>
+                <p style="margin: 0 auto;">Mantente informado con las últimas noticias, eventos y avances académicos de nuestra comunidad estudiantil.</p>
+                <div style="margin-top: 40px;">
+                    <a href="quienes-somos.html" class="btn" style="background: var(--white); color: var(--primary-color); padding: 15px 40px;">Conocer más</a>
                 </div>
             </div>
         </section>
 
-        <!-- Posts Más Leídos -->
-        <section class="section container">
+        <!-- Noticias Destacadas -->
+        <section class="container">
             <h2 class="section-title">Noticias Destacadas</h2>
-            <div class="posts-grid">
+            <div class="news-grid">
                 <!-- Post 1 -->
-                <article class="post-card">
-                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=400&q=80" alt="Feria tecnológica">
-                    <div class="post-content">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Feria tecnológica">
+                    <div class="card-body">
                         <h3>Nueva Feria Tecnológica 2024</h3>
-                        <p>El campus central recibirá a más de 50 empresas líderes en el sector tecnológico...</p>
+                        <p>El campus central recibirá a más de 50 empresas líderes en el sector tecnológico y de innovación.</p>
                         <a href="nota.html" class="btn">Leer más</a>
                     </div>
                 </article>
                 <!-- Post 2 -->
-                <article class="post-card">
-                    <img src="https://images.unsplash.com/photo-1524178232363-1fb28f74b083?auto=format&fit=crop&w=400&q=80" alt="Conferencia">
-                    <div class="post-content">
-                        <h3>Conferencia sobre Sostenibilidad</h3>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb28f74b083?auto=format&fit=crop&w=600&q=80" alt="Conferencia">
+                    <div class="card-body">
+                        <h3>Sostenibilidad y Futuro</h3>
                         <p>Expertos internacionales debaten sobre el futuro del medio ambiente en nuestra aula magna.</p>
                         <a href="nota.html" class="btn">Leer más</a>
                     </div>
                 </article>
                 <!-- Post 3 -->
-                <article class="post-card">
-                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=400&q=80" alt="Exámenes">
-                    <div class="post-content">
-                        <h3>Guía de Supervivencia: Finales</h3>
-                        <p>Consejos y técnicas de estudio para afrontar con éxito la temporada de exámenes.</p>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80" alt="Exámenes">
+                    <div class="card-body">
+                        <h3>Guía de Éxito Académico</h3>
+                        <p>Consejos y técnicas de estudio para afrontar con éxito la temporada de exámenes finales.</p>
                         <a href="nota.html" class="btn">Leer más</a>
                     </div>
                 </article>
                 <!-- Post 4 -->
-                <article class="post-card">
-                    <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=400&q=80" alt="Deportes">
-                    <div class="post-content">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=600&q=80" alt="Deportes">
+                    <div class="card-body">
                         <h3>Torneo Interfacultades</h3>
-                        <p>Este fin de semana inician las competencias deportivas más esperadas del año.</p>
+                        <p>Este fin de semana inician las competencias deportivas más esperadas de todo el año.</p>
                         <a href="nota.html" class="btn">Leer más</a>
                     </div>
                 </article>
                 <!-- Post 5 -->
-                <article class="post-card">
-                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80" alt="Biblioteca">
-                    <div class="post-content">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80" alt="Biblioteca">
+                    <div class="card-body">
                         <h3>Nuevos Recursos Digitales</h3>
-                        <p>La biblioteca central amplia su catálogo con acceso a más de 10,000 revistas científicas.</p>
+                        <p>La biblioteca central amplía su catálogo con acceso a más de 10,000 revistas científicas internacionales.</p>
                         <a href="nota.html" class="btn">Leer más</a>
                     </div>
                 </article>
                 <!-- Post 6 -->
-                <article class="post-card">
-                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=400&q=80" alt="Graduación">
-                    <div class="post-content">
-                        <h3>Preparativos para la Graduación</h3>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Graduación">
+                    <div class="card-body">
+                        <h3>Ceremonia de Graduación</h3>
                         <p>Todo lo que necesitas saber sobre la ceremonia de entrega de diplomas del ciclo 2024-I.</p>
                         <a href="nota.html" class="btn">Leer más</a>
                     </div>
@@ -135,19 +107,19 @@
         </section>
 
         <!-- Ubicación y Video -->
-        <section class="section location-video">
+        <section style="background-color: var(--white); padding: 80px 0;">
             <div class="container">
                 <div class="grid-2">
-                    <div class="location-col">
-                        <h2 class="section-title">Nuestra Ubicación</h2>
-                        <div class="map-container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15050.419472346087!2d-99.184365!3d19.332824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff4eb57f201%3A0x66c7f897f1f96404!2sCiudad%20Universitaria!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx" height="350" allowfullscreen="" loading="lazy"></iframe>
+                    <div>
+                        <h2 class="section-title" style="text-align: left; margin-top: 0;">Nuestra Ubicación</h2>
+                        <div style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow);">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15050.419472346087!2d-99.184365!3d19.332824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff4eb57f201%3A0x66c7f897f1f96404!2sCiudad%20Universitaria!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
-                    <div class="video-col">
-                        <h2 class="section-title">Video Destacado</h2>
-                        <div class="video-container">
-                            <iframe height="350" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <h2 class="section-title" style="text-align: left; margin-top: 0;">Video Institucional</h2>
+                        <div style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow);">
+                            <iframe width="100%" height="350" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -157,36 +129,21 @@
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>UNI-NOTICIAS</h4>
+            <div class="grid-2" style="text-align: left; margin-bottom: 40px;">
+                <div>
+                    <h3 style="margin-bottom: 20px;">UNI-NOTICIAS</h3>
                     <p>El portal oficial de comunicación de nuestra casa de estudios. Comprometidos con la verdad y la excelencia académica.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div style="text-align: right;">
+                    <h3 style="margin-bottom: 20px;">Síguenos</h3>
+                    <div style="font-size: 1.5rem; display: flex; gap: 20px; justify-content: flex-end;">
+                        <a href="#" style="color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-x-twitter"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Mapa del Sitio</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                        <li><a href="nota.html">Nota</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Universidad 3000, Ciudad Universitaria</li>
-                        <li><i class="fas fa-phone"></i> +52 (55) 1234-5678</li>
-                        <li><i class="fas fa-envelope"></i> contacto@universidad.edu.mx</li>
-                    </ul>
-                </div>
             </div>
-            <div class="footer-bottom">
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center;">
                 <p>&copy; 2026 Portal de Noticias Universitario. Todos los derechos reservados.</p>
             </div>
         </div>
