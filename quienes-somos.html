@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiénes Somos | Portal de Noticias Universitario</title>
+    <title>Quiénes Somos</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,49 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sobreescribe el tamaño del banner de Quiénes Somos */
+        .about-banner {
+            padding: 55px 0 !important;
+            min-height: auto;
+        }
+
+        .about-banner h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 8px;
+        }
+
+        .about-banner p {
+            font-size: 1rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Efecto hover para las cajas de Misión y Visión */
+        .vision-mission .box {
+            transition: transform 0.3s ease, 
+                        box-shadow 0.3s ease, 
+                        background-color 0.3s ease;
+            transform-origin: center;
+        }
+
+        .vision-mission .box:hover {
+            transform: translateY(-6px) scale(1.04);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+            background-color: #ffffff;
+        }
+
+        /* Ajuste para móviles */
+        @media (max-width: 768px) {
+            .about-banner {
+                padding: 45px 0 !important;
+            }
+
+            .vision-mission .box:hover {
+                transform: translateY(-4px) scale(1.02);
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -45,22 +88,22 @@
             <div class="about-grid">
                 <div class="about-text">
                     <h2 class="section-title" style="text-align: left; margin-left: 0;">Nuestra Institución</h2>
-                    <p>El Portal de Noticias Universitario nació en el año 2010 como una iniciativa estudiantil para centralizar la información relevante de todas las facultades. Con el tiempo, se ha convertido en el medio de comunicación digital más importante de nuestra universidad.</p>
-                    <p>Contamos con un equipo multidisciplinario de periodistas, diseñadores y programadores, todos ellos alumnos y egresados de esta casa de estudios, comprometidos con la difusión de la ciencia, la cultura y el deporte.</p>
+                    <p>El Portal de Noticias Universitario nació en el año 2026 como un proyecto escolar que el profesor nos encargó. Con el tiempo, se ha convertido en un proyecto escolar que esperamos que, como equipo, nos de algún beneficio en el segundo parcial.</p>
+                    <p>Contamos con un equipo multidisciplinario de informáticos, migajeros y procrastinadores en potencia. Todos ellos alumnos de esta curiosa casa de estudios, comprometidos con pasar la materia.</p>
                     
                     <div class="vision-mission">
                         <div class="box">
                             <h3>Misión</h3>
-                            <p>Informar de manera veraz, oportuna y objetiva sobre el acontecer universitario, promoviendo la integración de la comunidad académica.</p>
+                            <p>Hacer una página web que se vea bonita en media hora.</p>
                         </div>
                         <div class="box">
                             <h3>Visión</h3>
-                            <p>Ser el portal referente de noticias universitarias a nivel nacional, destacando por nuestra innovación digital y calidad periodística.</p>
+                            <p>Obtener algunas décimas más en el segundo parcial.</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80" alt="Institución Universitaria" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="https://cdn.memegenerator.es/descargar/32382382" alt="Petición 100% Universitaria" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                 </div>
             </div>
             
