@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nota | Feria Tecnológica Universitaria</title>
+    <title>Nueva feria tecnológica revoluciona el campus | UniNoticias</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="article-page">
     <header>
         <nav class="navbar">
-            <div class="logo"><i class="fas fa-university"></i> Uni<span>Noticias</span></div>
-            <ul class="nav-links" id="navLinks">
+            <a href="index.html" class="logo"><i class="fas fa-university"></i> Uni<span>Noticias</span></a>
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="quienes-somos.html">Quiénes Somos</a></li>
                 <li><a href="nota.html" class="active">Nota</a></li>
@@ -20,33 +20,47 @@
         </nav>
     </header>
 
-    <main class="container">
-        <article class="full-note">
-            <header class="note-header">
-                <h1>Nueva feria tecnológica revoluciona el campus principal</h1>
-                <p class="meta">Por: <strong>Andrés Rivera</strong> | 24 de Mayo, 2024</p>
-                <div class="share-btns">
-                    <button class="share fb"><i class="fab fa-facebook"></i> Compartir</button>
-                    <button class="share tw"><i class="fab fa-twitter"></i> Twittear</button>
+    <main class="container-article">
+        <article class="single-post">
+            <header class="post-header">
+                <span class="category-tag">Innovación Académica</span>
+                <h1 class="post-title">Nueva feria tecnológica revoluciona el campus principal</h1>
+                <div class="post-meta-wrapper">
+                    <div class="author-info">
+                        <img src="https://ui-avatars.com/api/?name=Andres+Rivera&background=1a2a6c&color=fff" alt="Andrés Rivera" class="author-img">
+                        <div>
+                            <p class="author-name">Por Claudia Sheinbaum</p>
+                            <p class="post-date">11 de Septiembre, 2001 • <i class="far fa-clock"></i> 666 min de lectura</p>
+                        </div>
+                    </div>
+                    <div class="post-share">
+                        <a href="#" class="share-icon fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="share-icon tw"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </header>
 
-            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Feria Tec" class="main-img">
+            <figure class="main-featured-image">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Feria">
+                <figcaption>Demostración de prototipos de robótica en la explanada central.</figcaption>
+            </figure>
 
-            <div class="content">
-                <p>El campus central se convirtió esta semana en el epicentro de la innovación con la décima edición de la "Feria de Tecnología y Ciencia 2024". Más de 50 proyectos estudiantiles fueron presentados, abarcando áreas desde la robótica avanzada hasta la biotecnología sustentable.</p>
-                <p>El rector destacó que este tipo de eventos fortalecen el vínculo entre la academia y la industria privada, permitiendo que los talentos jóvenes encuentren plazas laborales antes de egresar.</p>
+            <div class="post-body">
+                <p class="lead">El campus central se convirtió esta semana en el epicentro de la innovación con la décima edición de la "Feria de Tecnología y Ciencia 2026".</p>
+                <p>Más de 50 proyectos estudiantiles fueron presentados, abarcando áreas desde la robótica avanzada hasta la biotecnología sustentable. La jornada atrajo a expertos de todo el país.</p>
                 
-                <h3>Galería del Evento</h3>
-                <div class="gallery">
+                <blockquote>"La universidad es el laboratorio donde se cocina el futuro del país." <cite>— Rectora Importante</cite></blockquote>
+
+                <h3>Impacto Global</h3>
+                <p>El rector destacó que este tipo de eventos fortalecen el vínculo entre la academia y la industria privada, permitiendo empleabilidad inmediata.</p>
+
+                <div class="article-gallery">
                     <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="G1">
                     <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400&q=80" alt="G2">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="G3">
                 </div>
 
-                <div class="note-video">
-                    <h3>Resumen en Video</h3>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/9No-FiE9y7M" frameborder="0" allowfullscreen></iframe>
+                <div class="video-wrapper">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/9No-FiE9y7M" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </article>
