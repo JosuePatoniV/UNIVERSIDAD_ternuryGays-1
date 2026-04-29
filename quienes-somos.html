@@ -11,6 +11,33 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ajustes específicos de diseño del equipo */
+        .about-banner {
+            padding: 60px 0 !important;
+        }
+
+        .about-banner h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 10px;
+        }
+
+        /* Efecto hover para las cajas de Misión y Visión */
+        .vision-mission-box {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .vision-mission-box:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        @media (max-width: 768px) {
+            .vision-mission-box:hover {
+                transform: translateY(-4px) scale(1.01);
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -46,11 +73,11 @@
                     <p style="margin-bottom: 30px;">Contamos con un equipo multidisciplinario de informáticos, migajeros y procrastinadores en potencia. Todos ellos alumnos de esta curiosa casa de estudios, comprometidos con pasar la materia.</p>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        <div style="background: var(--white); padding: 25px; border-radius: var(--border-radius); box-shadow: var(--shadow); border-left: 5px solid var(--secondary-color);">
+                        <div class="vision-mission-box" style="background: var(--white); padding: 25px; border-radius: var(--border-radius); box-shadow: var(--shadow); border-left: 5px solid var(--secondary-color);">
                             <h3 style="margin-bottom: 10px; color: var(--primary-color);">Misión</h3>
                             <p style="font-size: 0.9rem;">Hacer una página web que se vea bonita en media hora.</p>
                         </div>
-                        <div style="background: var(--white); padding: 25px; border-radius: var(--border-radius); box-shadow: var(--shadow); border-left: 5px solid var(--primary-color);">
+                        <div class="vision-mission-box" style="background: var(--white); padding: 25px; border-radius: var(--border-radius); box-shadow: var(--shadow); border-left: 5px solid var(--primary-color);">
                             <h3 style="margin-bottom: 10px; color: var(--primary-color);">Visión</h3>
                             <p style="font-size: 0.9rem;">Obtener algunas décimas más en el segundo parcial.</p>
                         </div>
